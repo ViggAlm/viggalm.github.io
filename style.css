@@ -43,19 +43,19 @@ body {
 }
 
 .github {
-    background-color: #333;
+    background-color: #dd2828;
 }
 
 .github:hover {
-    background-color: #24292e;
+    background-color: #c01c1c;
 }
 
 .signal {
-    background-color: #3a76f0;
+    background-color: #326bdd;
 }
 
 .signal:hover {
-    background-color: #3466c8;
+    background-color: #2356bd;
 }
 
 header {

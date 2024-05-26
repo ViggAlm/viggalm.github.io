@@ -1,72 +1,91 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #dcdcdc;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px; /* Space between the image and the container */
-    max-width: 90%;
-    width: 100%;
-}
-
 .container {
     background: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
     max-width: 600px;
     text-align: center;
     border-radius: 10px;
 }
 
-.side-image {
-    width: 20%;
+.picture {
+    width: 100px;
     border-radius: 50%;
-    border: solid 3px #333;
+    border: 3px solid #333;
+    margin: 0 20px;
 }
 
-.rounded-header {
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.github {
     background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    border-radius: 10px;
+}
+
+.github:hover {
+    background-color: #24292e;
+}
+
+.signal {
+    background-color: #3a76f0;
+}
+
+.signal:hover {
+    background-color: #3466c8;
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
 
-h1 {
+header a {
+    color: inherit;
+}
+
+h1, h2 {
     margin: 0;
+    padding: 0;
 }
 
 section {
     margin: 20px 0;
 }
 
-h2 {
-    color: #333;
-}
-
 p, ul {
     color: #555;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
 ul li {
@@ -74,4 +93,32 @@ ul li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .picture {
+        width: 60px;
+    }
+    
+    header, section {
+        padding: 8px 0;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    p, ul li {
+        font-size: 0.9em;
+    }
 }

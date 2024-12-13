@@ -1,126 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #dcdcdc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@media (prefers-color-scheme: dark){
+    body {
+        background:#000;
+        color: white;
+    }
 }
 
-.container {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 10px;
+body{
+    margin: 1em auto;
+    max-width:40em;
+    padding:0 .62em 3.24em;
+    font:1.2em/1.62 sans-serif
 }
 
-.picture {
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid #333;
-    margin: 0 20px;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.social-button {
+a {
+    margin: 0 2em 0 0;
     text-decoration: none;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
 }
 
-.github {
-    background-color: #dd2828;
+h1,h2,h3 {
+    line-height:1.2
 }
 
-.github:hover {
-    background-color: #c01c1c;
-}
-
-.signal {
-    background-color: #326bdd;
-}
-
-.signal:hover {
-    background-color: #2356bd;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    border-radius: 10px;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1, h2 {
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    margin: 20px 0;
-}
-
-p, ul {
-    color: #555;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Responsive Styles */
-@media (max-width: 480px) {
-    .container {
-        width: 90%;
-        padding: 10px;
-    }
-    
-    .picture {
-        width: 60px;
-    }
-    
-    header, section {
-        padding: 8px 0;
-    }
-    
-    h1 {
-        font-size: 1.2em;
-    }
-    
-    h2 {
-        font-size: 1em;
-    }
-    
-    p, ul li {
-        font-size: 0.9em;
+@media print{
+    body{
+        max-width:none
     }
 }
